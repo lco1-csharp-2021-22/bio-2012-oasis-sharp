@@ -16,12 +16,13 @@ namespace ConsoleApp1
             List<int> listOfFactors = new List<int>();
 
             for (int x = 2; x <= i; x++)
+            {
                 if (i % x == 0 && x != 1)
                 {
                     listOfFactors.Add(x);
                     i = i / x;
-                    
                 }
+            }
             
             listOfFactors = listOfFactors.Distinct().ToList();
             int num = 1;
